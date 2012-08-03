@@ -9,6 +9,7 @@
 
 var sites = {
     'youtube':     'youtube\\.com/.*[&?]v=([a-z0-9_\\-]+)',
+    'youtube':     'youtu\\.be\\/([a-z0-9_\\-]+)',
     '12seconds':   '12seconds\\.com\\/v\\/([a-z0-9_]+)',
     '5min':        '5min\\.com\\/Video/.*-([0-9]+)([&?]|$)',
     'clipfish':    'clipfishi\\.de\\/.*\\/video\\/([0-9])+\\/',
