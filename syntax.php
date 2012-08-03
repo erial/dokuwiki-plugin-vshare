@@ -138,7 +138,7 @@ class syntax_plugin_vshare extends DokuWiki_Syntax_Plugin {
                                 $data['vars'],
                                 $data['vars']);
             }else if($data['site'] != "youtube"){
-                $R->doc .= '<iframe width="' . $data['width'] . '" height="' . $data['height'] . '" src="http://www.youtube.com/embed/' . $data['title'] .'" frameborder="0" allowfullscreen></iframe>';
+                $R->doc .= '<iframe width="' . $data['width'] . '" height="' . $data['height'] . '" src="http://www.youtube.com/embed/' . $data['video'] . '" frameborder="0" allowfullscreen></iframe>';
             }else
                 $R->doc .= '<script type="text/javascript" src="http://ext.nicovideo.jp/thumb_watch/' . $data['video'] . '"></script>';
                 $R->doc .= '<noscript><a href="http://www.nicovideo.jp/watch/' . $data['video'] . '">' . hsc($data['title']) . '</a></noscript>';
