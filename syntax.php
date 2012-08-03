@@ -130,12 +130,17 @@ class syntax_plugin_vshare extends DokuWiki_Syntax_Plugin {
         }else{
             // Normal output
             $R->doc .= '<div class="vshare__'.$align.'"'.$title.'>';
-            $R->doc .= html_flashobject(
+            if ($data['site'] != "nicovideo") {
+                $R->doc .= html_flashobject(
                                 $data['flash'],
                                 $data['width'],
                                 $data['height'],
                                 $data['vars'],
                                 $data['vars']);
+            }else{
+                $R->doc .= '<script type="text/javascript" src="http://ext.nicovideo.jp/thumb_watch/' . $data['video'] . '"></script>';
+                $R->doc .= '<noscript><a href="http://www.nicovideo.jp/watch/' . $data['video'] . '">' . hsc($data['title']) . '</a></noscript>';
+            }
             $R->doc .= '</div>';
         }
     }
