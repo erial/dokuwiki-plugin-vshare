@@ -27,6 +27,7 @@ var sites = {
     'stickam':     'stickam\\.com\\/viewMedia.do\\?mId=(\\d+)',
     'ustream':     'ustream\\.tv\\/recorded\\/(\\d+)\\/',
     'veoh':        'veoh\\.com\\/.*watch[^v]*(v[a-z0-9]+)',
-    'vimeo':       'vimeo\\.com\\/(\\d+)'
+    'vimeo':       'vimeo\\.com\\/(\\d+)',
+    'nicovideo':   'nicovideo\\.jp\\/.*\\/([a-z0-9]+)'
 };
 
